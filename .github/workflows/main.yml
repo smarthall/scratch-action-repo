@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: smarthall/load-check-conclusion
+    - uses: smarthall/load-check-conclusion@master
       id: check
-    - uses: smarthall/lifx-buildlight-action
+    - uses: smarthall/lifx-buildlight-action@master
       with:
         lifx-token: ${{ secrets.LIFX_TOKEN }}
         selector: 'id:d073d514e7d3|0'
